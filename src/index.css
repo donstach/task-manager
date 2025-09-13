@@ -1,0 +1,104 @@
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --danger: #dc2626;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: #111827;
+}
+
+.container {
+  max-width: 28rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.task-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+.btn {
+  padding: 0.5rem 0.75rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-alt {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.filters {
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.filters button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+}
+.filters .active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: var(--card);
+  align-items: center;
+}
+.left {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.done {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+.link {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  color: var(--muted);
+}
+.link.danger {
+  color: var(--danger);
+}
