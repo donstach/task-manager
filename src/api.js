@@ -7,3 +7,4 @@ const api = axios.create({
 });
 
 export default api;
+export const API_URL = "https://task-manager-backend-9jeu.onrender.com/api/tasks";
